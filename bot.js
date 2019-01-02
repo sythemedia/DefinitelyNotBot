@@ -1,4 +1,5 @@
 const Discord = require('discord.js');
+const PREFIX = process.env.PREFIX;
 const client = new Discord.Client();
 
 client.on('ready', () => {
@@ -6,14 +7,16 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === 'ping') {
-    	message.channel.send('PONG!');
-  	}
-});
+if (command == "!help") {
+        var embedhelpmember = new Discord.RichEmbed()
+            .setTitle("**💬 Command List.**\n")
+            .addField(" - checkpoint", "Checkpoint Settings.")
+            .addField(" - ping", "PING PONG.")
+            .setColor(0x00FFEE)
 
 client.on('message', message => {
-    if (message.content === 'bing') {
-    	message.reply('BONG!');
+    if (message.content === 'ping') {
+    	message.reply('pong');
   	}
 });
 
