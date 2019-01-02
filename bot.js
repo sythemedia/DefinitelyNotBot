@@ -4,10 +4,9 @@ const client = new Discord.Client();
 
  
 
-client.on('ready', () => {
-
-    console.log('I am ready!');
-
+client.on("ready", () => {
+    console.log(`Logged in as ${client.user.username}`);
+    client.user.setActivity("Watching Servers", {type: "WATCHING"});
 });
 
  
