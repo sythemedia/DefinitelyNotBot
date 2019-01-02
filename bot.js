@@ -11,7 +11,7 @@ bot.login(botToken);
 
 client.on("ready", () => {
     console.log(`Logged in as ${client.user.username}`);
-    client.user.setActivity("Watching Servers", {type: "WATCHING"});
+    client.user.setActivity("TESTING", {type: "WATCHING"});
 })
 
 //If there isn't a reaction for every role, scold the user!
