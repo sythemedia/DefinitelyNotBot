@@ -6,16 +6,8 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-if (message.content == "!help") {
-        var embedhelpmember = new Discord.RichEmbed()
-            .setTitle("**💬 Command List.**\n")
-            .addField(" - checkpoint", "Checkpoint Settings.")
-            .addField(" - ping", "PING PONG.")
-            .setColor(0x00FFEE)
-
-client.on('message', message => {
-    if (message.content === 'ping') {
-    	message.reply('pong');
+    if (message.content === '!eval') {
+    	message.reply('TypeError: Cannot read property '' of null');
   	}
 });
 
