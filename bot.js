@@ -21,16 +21,7 @@ client.on('message', message => {
 
 });
 
-client.on('message', message => {
-       
-      if (message.conent === 'testing') {
-       
-          message.reply({embed: {color: 3447003, description: "testing stuff for upcoming build"}});
-       
-       
-
- 
-
+      
 // THIS  MUST  BE  THIS  WAY
 
 client.login(process.env.BOT_TOKEN);//BOT_TOKEN is the Client Secret
