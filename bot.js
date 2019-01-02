@@ -1,5 +1,4 @@
 const Discord = require('discord.js');
-const PREFIX = process.env.PREFIX;
 const client = new Discord.Client();
 
 client.on('ready', () => {
@@ -7,7 +6,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-if (command == "!help") {
+if (message.content == "!help") {
         var embedhelpmember = new Discord.RichEmbed()
             .setTitle("**💬 Command List.**\n")
             .addField(" - checkpoint", "Checkpoint Settings.")
